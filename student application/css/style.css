@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*header*/
+
+.header {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: rgb(54, 84, 134);
+}
+.header h5 {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+.upper-button-box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 30px;
+}
+
+.upper-button-box .left-button {
+  width: 50%;
+  height: 100%;
+}
+.upper-button-box .left-button button {
+  border: none;
+  outline: none;
+  background-color: rgb(155, 224, 226);
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+/*table*/
+
+.table-box {
+  width: 100%;
+  padding: 20px;
+}
+.table-box table {
+  width: 100%;
+  border: 1px solid rgb(220, 220, 237);
+}
+
+.table-box table tr th {
+  border: 1px solid rgb(220, 220, 237);
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-color: rgb(249, 247, 201);
+}
+
+.table-box table tr td {
+  border: 1px solid rgb(220, 220, 237);
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.table-box table tr td button {
+  border: none;
+  outline: none;
+  background-color: rgb(127, 199, 217);
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 13px;
+  color: black;
+  cursor: pointer;
+}
+
+/*form*/
+.form-modal span {
+  position: absolute;
+  right: -21px;
+  top: -40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.form-modal {
+  width: 40%;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 20px groove #4286f5;
+  opacity: 0;
+  z-index: -1;
+}
+.form-modal.active {
+  opacity: 1;
+  z-index: 1;
+}
+.form-modal .input-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-modal .input-box label {
+  font-size: 22 px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 20px 10px;
+}
+.form-modal .input-box input {
+  width: 70%;
+  margin: 10px 10px;
+  border: none;
+  outline: none;
+  padding: 13px;
+  border-bottom: 3px solid rgb(155, 224, 226);
+  font-size: 15px;
+}
+
+.form-modal button {
+  width: 45%;
+  border: none;
+  outline: none;
+  background-color: rgb(155, 224, 226);
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.form-modal button:disabled {
+  filter: grayscale(50);
+}
